@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Subject {
-    private List<FileObserver> fileObservers;
+    private final List<FileObserver> fileObservers;
     private FileReader fileReader;
 
     public Subject(String fileName) {
