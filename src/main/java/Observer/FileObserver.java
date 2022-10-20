@@ -16,9 +16,9 @@ public abstract class FileObserver {
     }
     public abstract void update(String sentence);
 
-    public void writeToFile(int value){
+    public void writeToFile(String value){
         try {
-            fileWriter.append(String.valueOf(value)).append("\n");
+            fileWriter.append(value).append("\n");
             fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();

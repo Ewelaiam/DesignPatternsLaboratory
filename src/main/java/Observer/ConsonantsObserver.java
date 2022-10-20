@@ -23,6 +23,6 @@ public class ConsonantsObserver extends FileObserver {
             }
         }
 
-        writeToFile(consonantsInSentence);
+        writeToFile(String.valueOf(consonantsInSentence));
     }
 }

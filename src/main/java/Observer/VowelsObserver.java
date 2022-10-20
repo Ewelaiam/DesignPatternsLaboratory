@@ -20,6 +20,6 @@ public class VowelsObserver extends FileObserver {
             }
         }
 
-        writeToFile(vowelsInSentence);
+        writeToFile(String.valueOf(vowelsInSentence));
     }
 }
