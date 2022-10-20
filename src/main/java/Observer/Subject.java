@@ -24,9 +24,8 @@ public class Subject {
     }
 
     public void removeObserver(FileObserver fileObserver){
-        if(fileObserver != null){
+        if(fileObserver != null)
             this.fileObservers.remove(fileObserver);
-        }
     }
 
     private void updateAll(String scanner) {
@@ -39,11 +38,11 @@ public class Subject {
         String sentence = "";
         while(true) {
             try {
-                int ans = fileReader.read();
-                if (ans == -1)
+                int symbol = fileReader.read();
+                if (symbol == -1)
                     break;
 
-                char c = (char)ans;
+                char c = (char) symbol;
                 sentence += c;
                 if (c == '.' || c == '!' || c == '?'){
                     updateAll(sentence);
