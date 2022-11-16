@@ -1,13 +1,13 @@
-package Observer;
+package pl.edu.agh.dp.Observer;
 
-public class WordsObserver extends FileObserver {
-    public WordsObserver(String fileName) {
+public class ReverseWordsObserver extends FileObserver{
+    public ReverseWordsObserver(String fileName) {
         super(fileName);
     }
-
     @Override
     public void update(String sentence) {
-        int wordsInSentence = 0;
+        StringBuilder word = new StringBuilder();
+        String newSentence = "";
         boolean isPreviousCharacterALetter = false;
         int eof = sentence.length() - 1;
         char[] characters = sentence.toCharArray();
@@ -15,16 +15,17 @@ public class WordsObserver extends FileObserver {
         for (int i = 0; i < characters.length; i++) {
             if (Character.isLetter(characters[i]) && i != eof) {
                 isPreviousCharacterALetter = true;
+                word.append(characters[i]);
             } else if (!Character.isLetter(characters[i]) && isPreviousCharacterALetter) {
-                wordsInSentence++;
+                word.reverse();
+                newSentence += word + " ";
+                word = new StringBuilder();
                 isPreviousCharacterALetter = false;
             } else if (Character.isLetter(characters[i]) && i == eof) {
-                wordsInSentence++;
+                word.append(characters[i]);
             }
         }
 
-        writeToFile(String.valueOf(wordsInSentence));
-
-
+        writeToFile(newSentence);
     }
 }

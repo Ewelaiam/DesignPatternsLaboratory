@@ -1,4 +1,4 @@
-package Observer;
+package pl.edu.agh.dp.Observer;
 
 import java.util.Arrays;
 import java.util.List;

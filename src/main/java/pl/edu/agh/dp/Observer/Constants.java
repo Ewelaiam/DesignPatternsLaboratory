@@ -1,4 +1,4 @@
-package Observer;
+package pl.edu.agh.dp.Observer;
 
 public class Constants {
     public static final String DATA_PATH = "src/main/resources/text_file.txt";

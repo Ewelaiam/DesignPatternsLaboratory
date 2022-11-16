@@ -1,4 +1,4 @@
-package Observer;
+package pl.edu.agh.dp.Observer;
 
 import java.io.FileReader;
 import java.io.IOException;

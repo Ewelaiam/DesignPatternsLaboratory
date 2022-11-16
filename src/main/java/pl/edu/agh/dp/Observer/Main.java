@@ -1,4 +1,4 @@
-package Observer;
+package pl.edu.agh.dp.Observer;
 
 public class Main {
     public static void main(String[] args) {
