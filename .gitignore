@@ -2,3 +2,4 @@
 /.gradle/
 /build/
 /build/classes/java/main/
+/src/main/java/pl/edu/agh/dp/Facade/*.class
