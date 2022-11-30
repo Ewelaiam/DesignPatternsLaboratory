@@ -6,13 +6,11 @@ import java.util.Set;
 public class PeerServerThread extends Thread{
     private final String port;
     private final ServerSocket serverSocket;
-//    private String hostName;
     private Set<P2PThread> p2pThreads;
 
     public PeerServerThread(String port) throws IOException {
         this.port = port;
         this.serverSocket = new ServerSocket(Integer.parseInt(port));
-//        this.hostName = InetAddress.getLocalHost().getHostName();
         p2pThreads = new HashSet<>();
     }
 
