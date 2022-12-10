@@ -1,0 +1,14 @@
+{
+  "fruit" : {
+    "apple" : {
+      "price per kg" : 2.5,
+      "amount in stock" : 4,
+      "country" : "Poland"
+    },
+    "banana" : {
+      "price per kg" : 6.5,
+      "amount in stock" : 10,
+      "country" : "X"
+    }
+  }
+}
