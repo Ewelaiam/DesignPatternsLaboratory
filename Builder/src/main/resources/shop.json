@@ -1,0 +1,21 @@
+{
+  "fruit" : {
+    "apple" : {
+      "zl/kg" : 3.49,
+      "boxInStock" : 120,
+      "country" : "Poland"
+    },
+    "banana" : {
+      "zl/kg" : 6.99,
+      "boxInStock" : 114,
+      "country" : "Ecuador"
+    }
+  },
+  "vegetable": {
+    "carrot" : {
+      "zl/kg" : 2.49,
+      "boxInStock" : 134,
+      "country" : "Poland"
+    }
+  }
+}
